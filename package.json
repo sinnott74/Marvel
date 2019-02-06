@@ -1,0 +1,7 @@
+{
+  "name": "marvel",
+  "version": "0.0.1",
+  "workspaces": ["server", "webclient"],
+  "license": "MIT",
+  "private": true
+}
