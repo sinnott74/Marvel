@@ -3,5 +3,12 @@
   "version": "0.0.1",
   "workspaces": ["server", "webclient"],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "cd server && yarn start",
+    "start:prod":
+      "concurrently --kill-others-on-fail \"cd webclient && yarn build\"  \"cd server && yarn start:prod\"",
+    "start:dev":
+      "concurrently --kill-others \"cd webclient && yarn start\" \"cd server && yarn start:dev\""
+  }
 }

@@ -3,5 +3,18 @@
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "yarn start:prod",
+    "start:prod": "node src/index.js",
+    "start:dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "memory-cache": "^0.2.0",
+    "node-fetch": "^2.3.0",
+    "nodemon": "^1.18.9"
+  }
 }
